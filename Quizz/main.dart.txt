@@ -1,0 +1,25 @@
+import 'package:flutter/material.dart';
+// import 'package:flutter_quiz_application/QuestionScreen.dart';
+import 'package:flutter_quiz_application/quiz.dart';
+// import 'package:flutter_quiz_application/questions.dart';
+// import 'package:flutter_quiz_application/quiz.dart';
+// import 'package:flutter_quiz_application/startscreen.dart';
+// import 'package:google_fonts/google_fonts.dart';
+// import 'package:google_fonts/google_fonts.dart';
+
+void main() {
+  // final void Function() StartPage = StartScreen(ChangeScreen)
+  runApp(MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        backgroundColor: Colors.amber,
+        body: Container(
+          decoration: const BoxDecoration(
+              gradient: LinearGradient(colors: [
+            Color.fromARGB(255, 116, 16, 255),
+            Color.fromARGB(255, 102, 7, 93)
+          ])),
+          child: const QuizPage(),
+        ),
+      )));
+}
