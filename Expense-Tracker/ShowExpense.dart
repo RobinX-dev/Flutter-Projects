@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
+
 
 import 'DataModel.dart';
 
@@ -21,7 +23,7 @@ class _ShowExpenseState extends State<ShowExpense> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('Expense Tracker'),
-          actions: [const Icon(Icons.add)],),
+          actions: const [Icon(Icons.add)],),
       body: Column(
         children: [
           ListView.builder(
@@ -29,17 +31,23 @@ class _ShowExpenseState extends State<ShowExpense> {
           itemCount: data.length,
           itemBuilder: (context,index)=>
           Card(
-            child: Column(
-              children: [
-                Text(data[index].title),
-                Row(
-                  children: [
-                    Text(data[index].amount.toString()),
-                    Spacer(),
-                    Text(data[index].date.toString(yMd))
-                  ],
-                )
-              ],
+            shape:RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+            color: const Color.fromARGB(200, 209, 153, 255),
+            margin: const EdgeInsets.fromLTRB(20, 5, 20, 5),
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Column(
+                children: [
+                  Text(data[index].title),
+                  Row(
+                    children: [
+                      Text(data[index].amount.toString()),
+                      const Spacer(),
+                      Text(DateFormat("d-M-y").format(data[index].date))
+                    ],
+                  )
+                ],
+              ),
             )
           ))
         ]
