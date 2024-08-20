@@ -1,0 +1,26 @@
+Expense Tracker
+ListView()
+showModalBottomSheet();
+textEditingController() 
+TextField()
+Dispose() method; = ?
+Navigator class, Navigator.pop(context) close the current loaded widget,
+Row inside row, column inside column, list indie the list causes error use expand method.
+showDatePicker()
+Async, await => wait for the process to be completed
+? => allows null , ! => tell compiler that must not be null.
+DropDownButtons() 
+DropDownMenuItem()
+Spacer()
+trim() remove the empty spaces,
+tryparse() used to convert the string to corresponding type 
+showDialog();
+Dismissible() => used to swipe the content in list view
+SnackBar() => 
+
+
+Theaming
+Gradient
+MaterialApp->theme: ThemeData
+copyWith() => used to copy the theme
+themeMode
