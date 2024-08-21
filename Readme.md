@@ -43,5 +43,5 @@ Responsive Layout
 
 Difference between shrink-wrap and expand is……
 ---------------
-1. Expand make the child to occupy the total space occupied by the parent widget,
-2. shrinkWrap make the list to occupy only space required for the children and make it scrolable
+1. **Expand** make the child to occupy the total space occupied by the parent widget,
+2. **shrinkWrap** make the list to occupy only space required for the children and make it scrolable
