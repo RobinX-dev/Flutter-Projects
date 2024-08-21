@@ -1,7 +1,8 @@
 <h1>Flutter</h1>
+----------------
 
-<h4>Expense Tracker</h4>
-----------------------
+Expense Tracker
+---------------
 ListView()
 showModalBottomSheet();
 dateFormat();
@@ -24,6 +25,7 @@ SnackBar() =>
 
 
 Theaming
+--------
 Gradient
 MaterialApp->theme: ThemeData
 copyWith() => used to copy the theme
@@ -32,7 +34,7 @@ themeMode
 
 
 Todo Application
---------------------------
+----------------
 Must use the controller.clear() method to clear the previous entered text in textField
 must use the Dipose() method while use the texteditingController.
 
