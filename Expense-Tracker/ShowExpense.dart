@@ -4,6 +4,9 @@ import 'package:intl/intl.dart';
 
 import 'DataModel.dart';
 
+final TextEditingController _titleController = TextEditingController();
+final TextEditingController _amountController = TextEditingController();
+
 class ShowExpense extends StatefulWidget {
   const ShowExpense({super.key});
 
@@ -18,12 +21,54 @@ class _ShowExpenseState extends State<ShowExpense> {
     DataModel(title: "Games", amount: 695, date: DateTime.now(), category: Categories.shopping),
   ];
 
+  @override
+  void dispose() {
+    _titleController.dispose(); // Dispose the controller when the widget is disposed
+    super.dispose();
+  }
+
+  void showCalender(){
+    final DateTime now = DateTime.now();
+    showDatePicker(context: context, initialDate: now, firstDate: DateTime(now.year - 1), lastDate: now);
+  }
+
+  void addExpense(){
+    showModalBottomSheet(context: context, builder: ((context) =>
+              Column(
+                children: [
+                  TextField(
+                    controller: _titleController,
+                    decoration: const InputDecoration(
+                      label: Text('Title'),
+                    ),
+                    keyboardType: TextInputType.text,
+                  ),
+                  Expanded(child: Row(
+                    children: [
+                      TextField(
+                      controller: _amountController,
+                      decoration: const InputDecoration(
+                        label: Text('Amount'),
+                      ),
+                      keyboardType: TextInputType.number,
+                    ),
+                    const Icon(Icons.calendar_month)
+                    ],
+                  ))
+                  
+                ],
+              )
+            ));
+  }
+
+
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('Expense Tracker'),
-          actions: const [Icon(Icons.add)],),
+          actions: [IconButton(onPressed:addExpense,
+          icon: const Icon(Icons.add))],),
       body: Column(
         children: [
           ListView.builder(
