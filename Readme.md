@@ -99,6 +99,5 @@ Difference between shrink-wrap and expand is……
 questions?
 -------------
 1. How to use multiple child widgets in body?
-2."    "   "   "  "        "     "    " column and row in body?
-3. 
+2. "    "   "   "  "        "     "    " column and row in body?
 
