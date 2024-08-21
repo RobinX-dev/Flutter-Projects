@@ -1,5 +1,4 @@
 <h1>Flutter</h1>
-----------------
 
 Expense Tracker
 ---------------
@@ -30,7 +29,6 @@ Gradient
 MaterialApp->theme: ThemeData
 copyWith() => used to copy the theme
 themeMode
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
 Todo Application
@@ -39,9 +37,11 @@ Must use the controller.clear() method to clear the previous entered text in tex
 must use the Dipose() method while use the texteditingController.
 
 Responsive Layout
+------------------
 1. To lock the orientation
 2. Adjust the code based on the screen size (MediaQuery)
 
 Difference between shrink-wrap and expand is……
+---------------
 	Expand make the child to occupy the total space occupied by the parent widget,
 	shrinkWrap make the list to occupy only space required for the children and make it scrolable
