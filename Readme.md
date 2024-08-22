@@ -98,11 +98,11 @@ Key
 ---
 Used for identification purpose. (Same as exactly Fkey in blazor) 
 
-<address>
+<pre>
 **final** : can be set only once and cannot be changed, Assigned at runtime.
 **var** : can be changed dynamically
 **const** : value cannot be changed, value assigned at compile time.
-</address>
+</pre>
 
 
 
