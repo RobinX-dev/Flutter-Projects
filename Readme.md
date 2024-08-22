@@ -105,7 +105,7 @@ var : can be changed dynamically
 const : value cannot be changed, value assigned at compile time.
 </pre>
 <pre>
-it automatically add the back button on the leading section of the app bar
+Navigator.push() automatically add the back button on the leading section of the app bar
 that hash navigator.pop() method inside it.
 </pre>
 
