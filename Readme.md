@@ -105,8 +105,8 @@ Used for identification purpose. (Same as exactly Fkey in blazor)
 
 Navigator.push 
 ----
-# it automatically add the back button on the leading section of the app bar
-# that hash navigator.pop() method inside it.
+  it automatically add the back button on the leading section of the app bar
+  that hash navigator.pop() method inside it.
 
 
 
