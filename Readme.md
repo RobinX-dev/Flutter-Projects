@@ -98,6 +98,7 @@ Key
 ---
 Used for identification purpose. (Same as exactly Fkey in blazor) 
 
+## Must know
 <pre>
 **final** : can be set only once and cannot be changed, Assigned at runtime.
 **var** : can be changed dynamically
