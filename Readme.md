@@ -94,6 +94,10 @@ Difference between shrink-wrap and expand is……
 1. **Expand** make the child to occupy the total space occupied by the parent widget,
 2. **shrinkWrap** make the list to occupy only space required for the children and make it scrolable
 
+Key
+---
+Used for identification purpose. (Same as exactly Fkey in blazor) 
+
 
 
 questions?
