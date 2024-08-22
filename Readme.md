@@ -99,6 +99,17 @@ Key
 Used for identification purpose. (Same as exactly Fkey in blazor) 
 
 
+**final** : can be set only once and cannot be changed, Assigned at runtime.
+**var** : can be changed dynamically
+**const** : value cannot be changed, value assigned at compile time.
+
+Navigator.push 
+----
+##it automatically add the back button on the leading section of the app bar
+##that hash navigator.pop() method inside it.
+
+
+
 
 questions?
 -------------
