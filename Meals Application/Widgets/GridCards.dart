@@ -8,11 +8,21 @@ class GridCards extends StatelessWidget {
 
   final CategoryDataModel data;
 
+  void _selectedCategory(BuildContext context,CategoryDataModel category){
+    final filteredList = dummyMeals.where((element) => element.categories.contains(category.id)).toList();
+        Navigator.push(
+          context, MaterialPageRoute(
+            builder: (context)=>MealsScreen(
+              title: category.title,
+              mealList: filteredList,
+            )));
+  }
+
   @override
   Widget build(BuildContext context) {
     return InkWell(
       onTap: (){
-        Navigator.push(context, MaterialPageRoute(builder: (context)=>const MealsScreen(mealsList: dummyMeals, title: 'Vegetarian')));
+        _selectedCategory(context, data);
       },
       splashColor: Colors.black.withOpacity(.5),
       borderRadius:BorderRadius.circular(15),
